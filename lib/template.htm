@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <style>
+            span {
+                font-size: 17.0pt;
+            }
+        </style>
+    </head>
+
+<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+
+<!--
+    <p><span lang=EN><o:p>&nbsp;</o:p></span></p>
+-->
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:
+ collapse;mso-table-layout-alt:fixed;border:none;mso-border-alt:solid black 1.0pt;
+ mso-yfti-tbllook:1536;mso-padding-alt:5.0pt 5.0pt 5.0pt 5.0pt;mso-border-insideh:
+ 1.0pt solid black;mso-border-insidev:1.0pt solid black'>
+    {{if .QRCode}}<img style="float: right; margin: .25em 0 .25em .5em;" src="data:image/png;base64,{{ .QRCode}}" alt="qrcode"/>{{end}}
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='border:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Customer Name:</span></p>
+  </td>
+  <td width=423 valign=top style='border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>{{ .CustomerName }}</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Customer Phone:</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>{{if .CustomerPhone }}{{ .CustomerPhone }}{{end}}</span></p>
+  </td>
+ </tr>
+ {{if .Note}}
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='width:150.75pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Note:</span></p>
+  </td>
+  <td valign=top style='width:317.25pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>{{ .Note }}</span></p>
+  </td>
+ </tr>
+ {{end}}
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Square Order #:</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>{{ .SquareOrderNumber }}</span></p>
+  </td>
+ </tr>
+</table>
+<br/><br/>
+<table border=1 cellspacing=0 cellpadding=0 width=607
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-border-alt:solid black 1.0pt;mso-yfti-tbllook:1536;mso-padding-alt:5.0pt 5.0pt 5.0pt 5.0pt;
+ mso-border-insideh:1.0pt solid black;mso-border-insidev:1.0pt solid black'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:no'>
+  <td width=245 valign=top style='width:183.75pt;border:solid white 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Double Portion: <b style='mso-bidi-font-weight:
+  normal'><i>{{ .Doubles }}</i><o:p></o:p></b></span></p>
+  </td>
+  <td width=245 valign=top style='width:183.75pt;border:solid white 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Single Portion: <b style='mso-bidi-font-weight:
+  normal'><i>{{ .Singles }}</i><o:p></o:p></b></span></p>
+  </td>
+  <td width=222 valign=top style='width:166.5pt;border:solid white 1.0pt;
+  border-left:none;mso-border-left-alt:solid white 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Kids Meals: <b style='mso-bidi-font-weight:
+  normal'><i>{{ .KidsMeals }}</i><o:p></o:p></b></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=245 valign=top style='width:183.75pt;border:solid white 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Sauces: <b style='mso-bidi-font-weight:
+  normal'>{{ .Sauces }}<o:p></o:p></b></span></p>
+  </td>
+  <td width=140 valign=top style='width:183.75pt;border:solid white 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN></span></p>
+  </td>
+  <td width=222 valign=top style='width:166.5pt;border:solid white 1.0pt;
+  border-left:none;mso-border-left-alt:solid white 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p style='line-height:normal;mso-pagination:none;border:none;
+  mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span
+  lang=EN>Desserts: <b style='mso-bidi-font-weight:
+  normal'>{{ .Desserts }}<o:p></o:p></b></span></p>
+  </td>
+ </tr>
+</table>
+
+<div>
+{{if .Beers}}
+<p><span lang=EN><o:p>Beer List:</o:p></span><br/>
+<ul>
+{{ range $key, $value := .Beers }}
+<li><span style="background-color:#FFFF00">{{$value}} of {{$key}}</span></li>
+{{end}}
+</ul>
+</p>
+{{end}}
+<p><span lang=EN><o:p>&nbsp;</o:p></span></p>
+<p><i><span lang=EN style='line-height:115%'>Car Description: {{ .CarDescription }}</span></i></p>
+
+<p><span lang=EN>{{if .Image}}Picture of Car:</span></p>
+<img style="image-orientation: from-image" src="data:image/png;base64, {{.Image}}" alt="Image" />
+<p><span lang=EN>{{end}}</span></p>
+</div>
+
+</body>
+
+</html>

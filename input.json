@@ -1,0 +1,23 @@
+{
+     "UpdateMode": "Update",
+     "Application": "FFCheckIn",
+     "TableName": "Fish Fry Orders",
+     "UserName": "",
+     "At": "2/5/2021 4:46:53 PM",
+     "Data":
+      { "Square Order Number": "293088293",
+        "Customer Name": "Fred Sansone",
+        "Customer Phone": "9195551212",
+        "Image": "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+        "Car Color": "Red",
+        "Car Make/Model": "Ford Dot",
+        "Car Number": "6",
+        "Adult Meals": "1",
+        "Kids Meals": "0",
+        "Total": "$15",
+        "Time Slot": "5:30PM-5:45PM",
+        "Order Status": "Arrived",
+        "Processed Time": "",
+        "Arrival Time": "4:46:00 PM"
+      }
+}
