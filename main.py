@@ -33,12 +33,11 @@ def main(args):
         "Rows": [
             {
                 "Square Order Number": ARGS.son,
-                "Arrival Time": time.strftime('%I:%M'),
+                "Arrival Time": time.strftime('%H:%M'),
                 "Car Number": ARGS.number,
                 "Car Color": ARGS.color,
                 "Car Make/Model": ARGS.make,
                 "Order Status": 'Arrived',
-                "Note": 'Manual Checkin',
             }
         ]
     }
